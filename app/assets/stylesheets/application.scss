@@ -1,0 +1,83 @@
+// NOTE: This is the master scss stylesheet. All other stylesheets are imported into the project through this file.
+
+// Graphical variables
+@import 'config/fonts';
+@import 'config/colors';
+@import 'config/bootstrap_variables';
+
+// External libraries
+@import 'bootstrap/scss/bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+// Your CSS partials
+@import 'components/index';
+@import 'pages/index';
+
+// IMPORT FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html,
+body,
+#root,
+.App {
+  font-family: Helvetica;
+  background-color: #f1f3f8;
+  height: 100%;
+  margin: 0;
+  background-image: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1615826819/Denizen%20Designer%20%28Temp%29/bg-repeat-full_buobfv.svg');
+  background-repeat: repeat;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content {
+  padding-bottom: 100px;
+  padding-top: 101px;
+  /* Height of the footer element */
+}
+
+.container-fluid {
+  max-width: 80.188rem;
+}
+
+.List-Inline {
+  list-style: none;
+  padding: 0;
+}
+
+.rr {
+  background-color: red;
+}
+
+.gr {
+  background-color: green;
+}
+
+
+@media (max-width: 594px) {
+  #content {
+    padding-top: 140px;
+  }
+}
+
+// Import all stylesheets
+@import '../../javascript/assets/stylesheets/shared/nav_secondary';
+@import '../../javascript/assets/stylesheets/shared/nav_primary';
+@import '../../javascript/assets/stylesheets/app_denizen/home';
+@import '../../javascript/assets/stylesheets/app_denizen/quotes';
+@import '../../javascript/assets/stylesheets/app_denizen/report';
+@import '../../javascript/assets/stylesheets/app_denizen/resources';
+@import '../../javascript/assets/stylesheets/shared/landing_page';
+@import '../../javascript/assets/stylesheets/app_hopd/timeline';
+@import '../../javascript/assets/stylesheets/app_denizen/interviews';
+@import '../../javascript/assets/stylesheets/app_denizen/desiegner_database';
+@import '../../javascript/assets/stylesheets/app_denizen/participants_show';
+@import '../../javascript/assets/stylesheets/shared/load_spinner';
+@import '../../javascript/assets/stylesheets/shared/footer';

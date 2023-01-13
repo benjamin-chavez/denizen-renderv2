@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Denizen Designer Project</title>
+  
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  <meta
+      property="og:description"
+      content="An ethnographic exploration of best practices and use cases of participatory design as a methodological framework."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dyy8g76av/image/upload/v1623730015/denizenlandingpage_mayzds.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+</head>
+
+<body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <%= yield %>
+</body>
+
+</html>
