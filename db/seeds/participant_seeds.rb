@@ -286,10 +286,10 @@ Participant.create!({
   designer_type: "Architect, Designer and Social Impact Strategist",
   location_state: "LA",
   location_city: "New Orleans",
-  bio: "Designer, architect, and educator, Taylor Holloway uses design-driven approaches to promote equity in the built environment. As a biracial woman, first generation college graduate, and individual who has experienced the U.S. foster care system, issues of creative voice, belonging, and healing are personal to her. 
+  bio: "Designer, architect, and educator, Taylor Holloway uses design-driven approaches to promote equity in the built environment. As a biracial woman, first generation college graduate, and individual who has experienced the U.S. foster care system, issues of creative voice, belonging, and healing are personal to her.
 
   Her work is focused on developing new and radical uses of public space, advancing collective capacities for social impact, and championing the preservation of shared cultural legacies.
-  
+
   Taylor is a Core Organizer of Design As Protest, a 2020 NextCity Vanguard, a 2019 Association for Community Design Fellow, an AIA Jason Pettigrew Memorial ARE Scholar, and the 2013 AIA Chicago Martin Roche Travel Fellow. Her organization, Public Design Agency, utilizes design-thinking, public art, and architecture to train future generations of designers, builders, & change-makers. She lives and works in New Orleans.",
   twitter: "yaypda",
   instagram: "alise_in_wonderland",
@@ -315,7 +315,7 @@ Participant.create!({
   profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1621930254/Denizen%20Participant%20Photos/2Tonika_Johnson_se4bbb.jpg",
   interviewed: true
   })
- 
+
 Participant.create!({
   first_name: "Victoria",
   last_name: "Barnnett",
@@ -372,8 +372,8 @@ Participant.create!({
   location_city: "Baltimore",
   bio: "Anushka Jajodia is a human and value-centered designer and an aspiring illustrator. She works as a Social Design Associate at the Center for Social Design at Maryland Institute College of Art (MICA), which stands on the unceded land of the Piscataway Conoy Nation. She is currently collaborating with researchers at the Johns Hopkins School of Nursing to co-design community-centered research programs that focus on:
 
-  1) Improving dementia literacy for Korean older adults and caregivers, 
-  2) Addressing disparities in diagnosis, 
+  1) Improving dementia literacy for Korean older adults and caregivers,
+  2) Addressing disparities in diagnosis,
   3) Implementing advanced care planning in primary care.",
   twitter: "",
   instagram: "anujojo",
@@ -447,7 +447,7 @@ Participant.create!({
   profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877734/Denizen%20Participant%20Photos/Brooke_Staton_rbhcsz.jpg",
   interviewed: true
   })
-  
+
 Participant.create!({
   first_name: "Keesha",
   last_name: "Gaskins-Nathan",
@@ -473,7 +473,7 @@ Participant.create!({
   bio: "Shanelle Matthews partners with social justice activists, organizations, and campaigns to inspire action through strategic communications and narrative power. From Sierra Club and ACLU to the Black Lives Matter Global Network and Aspen Institute, she has collaborated with different influencers and changemakers to transform complex ideas into persuasive political messaging.
 
   Today, she is the Communications Director for the Movement for Black Lives, an ecosystem of 150 organizations creating a broad political home for Black people to learn, organize, and take action. In 2016, Shanelle founded the Radical Communicators Network (RadComms) to strengthen the field of strategic communications, as well as Channel Black, a program that prepares progressive spokespeople to make critical, real-time interventions through the media. In 2017, Shanelle joined The New School as its inaugural Activist-in-Residence, and is currently faculty and teaches critical theory and social justice with an emphasis on Black resistance.
-  
+
   She holds a degree in Journalism and New and Online Media from the Manship School of Mass Communications at Louisiana State University and is co-authoring Building Narrative Power for 21st Century Social Movements, an anthology slated for print in 2022.",
   twitter: "",
   instagram: "hello_shanelle",

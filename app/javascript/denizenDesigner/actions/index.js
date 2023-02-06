@@ -1,24 +1,27 @@
-const ROOT_URL = '/api/v1/participants';
+// const ROOT_URL = '/api/v1/participants';
+// const ROOT_URL = "../denizenDesigner/participants.json";
+const ROOT_URL =
+  "https://raw.githubusercontent.com/bmchavez/EHI-Lab-Denizen-Designer-Website/main/app/javascript/participants.json";
 
-export const SET_PARTICIPANTS = 'SET_PARTICIPANTS';
-export const SET_NAV_SECONDARY = 'SET_NAV_SECONDARY';
-export const DENIZEN_TAB_SELECTED = 'DENIZEN_TAB_SELECTED';
-export const HOPD_TAB_SELECTED = 'HOPD_TAB_SELECTED';
-export const FETCH_PARTICIPANTS = 'FETCH_PARTICIPANTS';
-export const FETCH_PARTICIPANT = 'FETCH_PARTICIPANT';
-export const PARTICIPANT_CREATED = 'PARTICIPANT_CREATED';
-export const DELETE_PARTICIPANT = 'DELETE_PARTICIPANT';
-export const PARTICIPANT_UPDATED = 'PARTICIPANT_UPDATED';
+export const SET_PARTICIPANTS = "SET_PARTICIPANTS";
+export const SET_NAV_SECONDARY = "SET_NAV_SECONDARY";
+export const DENIZEN_TAB_SELECTED = "DENIZEN_TAB_SELECTED";
+export const HOPD_TAB_SELECTED = "HOPD_TAB_SELECTED";
+export const FETCH_PARTICIPANTS = "FETCH_PARTICIPANTS";
+export const FETCH_PARTICIPANT = "FETCH_PARTICIPANT";
+export const PARTICIPANT_CREATED = "PARTICIPANT_CREATED";
+export const DELETE_PARTICIPANT = "DELETE_PARTICIPANT";
+export const PARTICIPANT_UPDATED = "PARTICIPANT_UPDATED";
 
-export const FETCH_PARTICIPANTS_REQUEST = 'FETCH_PARTICIPANTS_REQUEST';
-export const FETCH_PARTICIPANTS_SUCCESS = 'FETCH_PARTICIPANTS_SUCCESS';
-export const FETCH_PARTICIPANTS_FAILURE = 'FETCH_PARTICIPANTS_FAILURE';
+export const FETCH_PARTICIPANTS_REQUEST = "FETCH_PARTICIPANTS_REQUEST";
+export const FETCH_PARTICIPANTS_SUCCESS = "FETCH_PARTICIPANTS_SUCCESS";
+export const FETCH_PARTICIPANTS_FAILURE = "FETCH_PARTICIPANTS_FAILURE";
 
 // QUOTE TYPES
 // export const FETCH_QUOTES = 'FETCH_QUOTES';
-export * from './quoteActions';
-export * from './cityActions';
-export * from './participantActions';
+export * from "./quoteActions";
+export * from "./cityActions";
+export * from "./participantActions";
 
 export function setParticipants() {
   // switch this url to local route once in rails
@@ -65,10 +68,10 @@ export function fetchParticipants() {
 
 export function createParticipant(body, callback) {
   const request = fetch(`${ROOT_URL}`, {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
+      "Content-Type": "application/json",
+      Accept: "application/json",
     },
     body: JSON.stringify(body),
   })
@@ -83,10 +86,10 @@ export function createParticipant(body, callback) {
 
 export function updateParticipant(id, body, callback) {
   const request = fetch(`${ROOT_URL}/${id}`, {
-    method: 'PUT',
+    method: "PUT",
     headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
+      "Content-Type": "application/json",
+      Accept: "application/json",
     },
     body: JSON.stringify(body),
   })
@@ -101,10 +104,10 @@ export function updateParticipant(id, body, callback) {
 
 export function deleteParticipant(id) {
   const promise = fetch(`${ROOT_URL}/${id}`, {
-    method: 'DELETE',
+    method: "DELETE",
     headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
+      "Content-Type": "application/json",
+      Accept: "application/json",
     },
   });
 
