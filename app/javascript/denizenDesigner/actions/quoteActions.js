@@ -1,9 +1,14 @@
-import axios from 'axios';
+import axios from "axios";
 
-export const FETCH_QUOTES_REQUEST = 'FETCH_QUOTES_REQUEST';
-export const FETCH_QUOTES_SUCCESS = 'FETCH_QUOTES_SUCCESS';
-export const FETCH_QUOTES_FAILURE = 'FETCH_QUOTES_FAILURE';
-export const QUOTE_CATEGORY_SELECTED = 'QUOTE_CATEGORY_SELECTED';
+// TODO: CHANGE THIS BACK TO API URL TO HIT PG DATABASE
+// const ROOT_URL = "/api/v1/quotes";
+const ROOT_URL =
+  "https://raw.githubusercontent.com/bmchavez/denizen-renderv2/master/app/javascript/denizenDesigner/quotes.json";
+
+export const FETCH_QUOTES_REQUEST = "FETCH_QUOTES_REQUEST";
+export const FETCH_QUOTES_SUCCESS = "FETCH_QUOTES_SUCCESS";
+export const FETCH_QUOTES_FAILURE = "FETCH_QUOTES_FAILURE";
+export const QUOTE_CATEGORY_SELECTED = "QUOTE_CATEGORY_SELECTED";
 
 export const fetchQuotesRequest = () => {
   return {
@@ -41,7 +46,7 @@ export const fetchQuotes = () => {
   return (dispatch) => {
     dispatch(fetchQuotesRequest);
     axios
-      .get('/api/v1/quotes')
+      .get(ROOT_URL)
       .then((response) => {
         const quotes = shuffleArray(response.data);
         dispatch(fetchQuotesSuccess(quotes));
